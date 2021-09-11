@@ -1,0 +1,34 @@
+.header
+	margin: 0 auto
+	width: 100%
+	background-color: #000000
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		@media (max-width: 1024px)
+			max-width: $midContainerWidth
+			padding: $midSitePadding
+	&__logo
+		display: block
+		padding: 20px 20px 20px 0
+		max-width: 160px
+		margin: 0 50px 0 0
+	&__nav
+		flex: 0 1 50%
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-items: center
+		li:first-of-type
+			margin-left: -15px
+		li:last-of-type
+			margin-right: -15px
+	&__link
+		padding: 15px
+	&__phone
+		display: block	
+	&__title
+		font-size: 36px
+		@media (max-width: 1024px)
+			font-size: 26px
