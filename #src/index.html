@@ -13,16 +13,46 @@
       <main class="main">
         <div class="container">
           <section class="section">
-            <h1 class="title section__title">Увидеть больше</h1>
-            <div class="section__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos
-              ea molestiae odio corrupti aperiam accusantium quia doloribus
-              nihil ut.
+            <div class="section__heading">
+              <h1 class="title section__title">Увидеть больше</h1>
+              <div class="section__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eos
+                ea molestiae odio corrupti aperiam accusantium quia doloribus
+                nihil ut.
+              </div>
+              <div class="main__slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="slide-box">
+                      <img class="main__slider-img" src="img/main-banner-img.jpg" alt=""/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-box">
+                      <img class="main__slider-img" src="img/main-banner-img.jpg" alt=""/>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slide-box">
+                      <img class="main__slider-img" src="img/main-banner-img.jpg" alt=""/>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
             </div>
           </section>
-          <section class="main__slider">
-            <img class="main__slider-img" src="img/main-banner-img.jpg" alt="">
-          </section>
+          <section class="section"></section>
         </div>
       </main>
       @@include('_footer.html')

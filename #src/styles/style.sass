@@ -1,3 +1,14 @@
+
+@mixin font($font_name, $file_name, $weight, $style)
+
+	@font-face
+		font-family: $font_name
+		font-display: swap
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2")
+		font-weight: #{$weight}
+		font-style: #{$style}
+
+@import _fonts
 @import _vars
 @import _nullstyle
 
@@ -13,7 +24,7 @@ body._lock
 	margin: 0 auto
 
 .main
-	flex: 1 1 auto	
+	flex: 1 1 auto
 
 .container
 	max-width: $maxContainerWidth
@@ -26,10 +37,6 @@ body._lock
 
 @import _header
 
-section
-	width: 100%
-	padding: 25px 0	
-
 .title
 	font-size: 32px
 	line-height: 120%
@@ -37,11 +44,15 @@ section
 	@media (max-width: 1024px)
 		font-size: 22px
 
+.section
+	width: 100%
+	padding: 25px 0
+
 .main
+	&__slider
+		width: $maxContainerWidth
+		height: 400px
 	&__slider-img
-		width: 100%		
-
-
-
+		width: 100%
 
 @import _footer

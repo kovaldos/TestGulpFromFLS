@@ -4,7 +4,8 @@
   "description": "сборка gulp",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "module"
   },
   "author": "kovaldos",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
+    "gulp-fs": "0.0.2",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-pug": "^5.0.0",
